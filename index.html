@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Fight | Daniel Stewart</title>
+  </head>
+  <body>
+    <section class="hero is-link is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Movie Fight
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <!-- left handside root -->
+          <div id="left-autocomplete"></div>
+          <div id="left-summary"></div>
+        </div>
+
+        <div class="column">
+          <!-- Right handside root -->
+          <div  id="right-autocomplete"></div>
+          <div id="right-summary"></div>
+        </div>
+      </div>
+
+      <div class="column is-half notification is-info tutorial">
+        <h1 class="title">Tutorial: <i class="fas fa-chalkboard-teacher"></i></h1>
+        <p class="subtitle "> Search for a movie on left and right  <i class="fab fa-searchengin"></i></p>
+        <p class="subtitle"> Compare stats like awards, rating</p>
+        <p class="subtitle"> Green <i class="fas fa-trophy"></i> | Yellow <i class="fas fa-window-close"></i></p>
+      </div>
+      
+    </div>
+    <script src="utils.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
